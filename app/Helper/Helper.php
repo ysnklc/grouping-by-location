@@ -141,7 +141,7 @@ class Helper
             ];
 
             if ($hasRoute){
-//dd($item);
+
                 $redirectUrl = route($routeName, ['id' => $item->id]);
                 $markers['eventClick'] = 'window.location.href = "' . $redirectUrl . '"';
             }
