@@ -10,16 +10,6 @@ use Illuminate\Http\Request;
 
 class GroupingByLocationController extends Controller
 {
-    private function groupingByCountryLocation()
-    {
-        // ülkelere göre gruplanmış abonelerin sayısını ve ülkelerein merkez lokasyonlarını alıyoruz
-        $groupingByCountry = GroupingByCountry::all();
-
-        Helper::mapping(30.0715461,15.5258733, 2.7, $groupingByCountry, 'country', true);
-
-        return $groupingByCountry;
-    }
-
     public function groipingByController()
     {
         $groupingByCountry = GroupingByCountry::all();
